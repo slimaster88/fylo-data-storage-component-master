@@ -1,24 +1,18 @@
-/*
-- Pale Blue: hsl(243, 100%, 93%)
-- Grayish Blue: hsl(229, 7%, 55%)
-- Dark Blue: hsl(228, 56%, 26%)
-- Very Dark Blue: hsl(229, 57%, 11%) */
 body {
   min-height: 100vh;
   margin: 0;
   background-image: url(../images/bg-mobile.svg);
   background-size: 100vw 100vh;
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.875em;
+  font-family: "Raleway", sans-serif;
+  font-size: 3.73vw;
   color: hsl(243, 100%, 93%);
-  /*text-align: center;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 h1 {
   color: black;
-  font-size: 2.2rem;
+  font-size: 11vw;
 }
 
 .top-container {
@@ -27,45 +21,50 @@ h1 {
   text-align: left;
   margin-left: 7%;
   background-color: hsl(228, 56%, 26%);
-  border-radius: 3vw 25vw 3vw 3vw;
+  border-radius: 3vw 22vw 3vw 3vw;
   padding: 9.2vw;
   box-sizing: border-box;
   box-shadow: 0 10px 30px 0 hsl(228, 56%, 13%);
+  bottom: 10vw;
 }
 .fylo-box {
   display: block;
 }
+.fylo {
+  width: 36vw;
+}
 .logo {
   margin-top: 9.2vw;
-  margin-right: 10px;
+  margin-right: 2.7vw;
   background-color: hsl(229, 57%, 11%);
-  border-radius: 10px;
+  border-radius: 2.7vw;
 }
 .logo1 {
-  padding: 12px 14px;
+  padding: 3.2vw 3.73vw;
+  width: 5.33vw;
 }
 .logo2 {
-  padding: 14px 12px;
+  padding: 3.73vw 3.2vw;
+  width: 6.4vw;
 }
 .logo3 {
-  padding: 16px 12px;
+  padding: 4.27vw 3.2vw;
+  width: 6.4vw;
 }
 .middle-container {
   width: 86vw;
   height: 44vw;
   position: relative;
-  /*top: 110px;*/
+  bottom: 5vw;
   text-align: center;
-  margin-top: 5vw;
   margin-left: 7vw;
   background-color: hsl(228, 56%, 26%);
-  border-radius: 10px;
+  border-radius: 3vw;
   padding: 5vw 9.2vw;
   box-sizing: border-box;
   box-shadow: 0 10px 30px 0 hsl(228, 56%, 13%);
 }
 p {
-  font-size: 0.87em;
   color: hsl(243, 100%, 93%);
 }
 .gb-815 {
@@ -73,26 +72,26 @@ p {
 }
 .skrl-rel {
   width: 100%;
-  height: 16px;
+  height: 3.9vw;
   background-color: hsl(229, 57%, 18%);
-  border: 2px solid hsl(229, 57%, 18%);
-  border-radius: 10px;
+  border: 0.557vw solid hsl(229, 57%, 18%);
+  border-radius: 3vw;
   margin-bottom: 10px;
 }
 .skrl-grad {
   position: relative;
   width: 81.5%;
-  height: 16px;
+  height: 3.9vw;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-  border-radius: 8px;
+  border-radius: 2vw;
 }
 .white-circle {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  width: 12px;
-  height: 12px;
-  border-radius: 6px;
+  right: 0.557vw;
+  top: 0.557vw;
+  width: 2.785vw;
+  height: 2.785vw;
+  border-radius: 1.875vw;
   background: white;
 }
 .left-span {
@@ -112,22 +111,21 @@ p {
   position: absolute;
   bottom: -10vw;
   left: calc(50vw - 7vw - 25vw);
- /* 50vw - middle-container margin-left - 50% white-box width */
-  border-radius: 10px;
+  /* 50vw - middle-container margin-left - 50% white-box width */
+  border-radius: 3vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .gb-left {
-  color: #9E9EA3;
+  color: #9e9ea3;
   font-weight: 700;
-  font-size: 0.7rem;
   margin-left: 8px;
   letter-spacing: 1px;
 }
 .attribution {
-  font-size: 0.7em;
+  font-size: 3.1vw;
   text-align: center;
   color: hsl(243, 100%, 93%);
   margin: 0;
@@ -144,116 +142,8 @@ p {
 .attribution a:hover {
   color: hsl(335, 100%, 65%);
 }
-@media only screen and (min-width: 370px) {
-  h1 {
-    font-size: 2.4rem;
-  }
-  p {
-    font-size: 1em;
-  }
-  .gb-left {
-  font-size: 0.75rem;
-  }
-}
-@media only screen and (min-width: 400px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1.1em;
-  }
-  .gb-left {
-  font-size: 0.8rem;
-  }
-  .white-box {
-    width: 44vw;
-    height: 18vw;
-    bottom: -9vw; /* 50% of height */
-    left: calc(50vw - 7vw - 22vw);
-/* 50vw - middle-container margin-left - 50% white-box width */
-}
-@media only screen and (min-width: 470px) {
-  h1 {
-    font-size: 2.55rem;
-  }
-  p {
-    font-size: 1.2em;
-  }
-  .gb-left {
-  font-size: 0.9rem;
-  }
-  .white-box {
-    width: 44vw;
-    height: 18vw;
-    bottom: -9vw; /* 50% of height */
-    left: calc(50vw - 7vw - 22vw);
-/* 50vw - middle-container margin-left - 50% white-box width */
-  }
-  .logo {
-    margin-top: 9.2vw;
-    margin-right: 10px;
-    background-color: hsl(229, 57%, 11%);
-    border-radius: 10px;
-  }
-  .logo1 {
-    padding: 12px 14px;
-  }
-  .logo2 {
-    padding: 14px 12px;
-  }
-  .logo3 {
-    padding: 16px 12px;
-  }
+@media only screen and (min-width: 550px) {
   .attribution {
-  font-size: 0.8rem;
-  }
-}
-@media only screen and (min-width: 650px) {
-  h1 {
-    font-size: 2.8rem;
-  }
-  p {
-    font-size: 1.4rem;
-  }
-  .middle-container {
-
-  }
-  .top-container {
-
-  }
-  .gb-left {
-  font-size: 1.2rem;
-  margin-left: 20px;
-  }
-  .white-box {
-    width: 44vw;
-    height: 18vw;
-    bottom: -9vw; /* 50% of height */
-    left: calc(50vw - 7vw - 22vw);
-/* 50vw - middle-container margin-left - 50% white-box width */
-  }
-  .fylo {
-    width: 40%;
-  }
-  .logo {
-    margin-top: 9.2vw;
-    margin-right: 10px;
-    background-color: hsl(229, 57%, 11%);
-    border-radius: 10px;
-  }
-  .logo1 {
-    width: 8%;
-    padding: 4.8% 5.6%;
-  }
-  .logo2 {
-    width: 9.6%;
-    padding: 5.6% 4.8%;
-  }
-  .logo3 {
-    width: 9.6%;
-    padding: 6.4% 4.8%;
-  }
-  .attribution {
-  font-size: 0.8rem;
+    font-size: 2.8vw;
   }
 }
