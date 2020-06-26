@@ -219,6 +219,7 @@ p {
     filter: invert(71%) sepia(15%) saturate(1123%) hue-rotate(316deg)
       brightness(117%) contrast(108%);
     background-color: #0c122c;
+    cursor: pointer;
   }
   .logo1 {
     padding: 12px 14px;
